@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(173, 173, 173);
+}
+
+.container{
+    border: 1px solid gray;
+    margin: auto;
+    width: 80%;
+    padding: 20px 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.toc{
+    width: 400px;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+.content{
+    display: flex;
+}
+
+p{
+    flex:3;
+}
+
+img{
+    margin-left: 100px;
+    flex:1;
+}
