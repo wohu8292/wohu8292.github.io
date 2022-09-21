@@ -43,6 +43,8 @@ h1 {
 article{
   background-color: white;
   border: 1px solid gray;
+  border-top: 1mm solid rgb(255, 119, 0);
+  border-bottom: 1mm solid rgb(255, 119, 0);
   background-image: url("top-image.png"), url("bottom-image.png"), 
   linear-gradient(180deg, rgb(133, 133, 133,0.5), white,rgba(133, 133, 133, 0.5));
   background-position: top, bottom;
