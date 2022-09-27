@@ -7,16 +7,15 @@ body{
 }
 
 nav{
-    margin: 3rem;
+    background-color: black;
 }
 
 .nav_container{
-    border-radius: 10px;
-    background-color: black;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    padding: 8px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_container a{
@@ -29,11 +28,19 @@ nav{
     text-align: center;
 }
 
+.nav_container li:nth-child(1){
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.nav_container li:nth-child(1) a{
+    color: black;
+    font-weight: bold;
+}
+
 .nav_container li:hover{
-    border-bottom: 1px solid white;
     font-weight: bold;
     cursor: pointer;
-    transition: .3s;
 }
 
 section{
