@@ -6,6 +6,8 @@ body{
     background-color: rgb(255, 255, 255)
 }
 
+/* ----------------nav-------------------- */
+
 nav{
     background-color: black;
 }
@@ -49,14 +51,32 @@ section{
     max-width: 80%;
 }
 
+/* ----------------about me-------------------- */
+
+img{
+    width: 230px; 
+    height: 300px; 
+    margin: 10px 0px;
+
+}
+
 section p{
     border-radius: 10px;
-    width: 50%;
-    padding: 80px;
+
+    padding: 30px;
     background:linear-gradient(135deg,rgb(226, 255, 173),white);
-    line-height: 24px;
+    line-height: 35px;
     text-align: center;
 }
+
+.flex_intro{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+/* ----------------favorite song-------------------- */
 
 h2{
     margin-top: 50px;
@@ -80,4 +100,32 @@ li{
     letter-spacing: 5px;
     color: rgb(169, 37, 37);
     font-weight: bold;
+}
+
+/* ----------------media query-------------------- */
+
+
+@media screen and (max-width:600px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
 }
