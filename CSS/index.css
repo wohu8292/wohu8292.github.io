@@ -48,7 +48,7 @@ nav{
 section{
     margin-top: 60px;
     margin-left: 10%;
-    max-width: 80%;
+    width: 80%;
 }
 
 /* ----------------about me-------------------- */
@@ -102,10 +102,10 @@ li{
     font-weight: bold;
 }
 
-/* ----------------media query-------------------- */
+/* ----------------media query for mobile-------------------- */
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:400px){
     .nav_container{
         flex-direction: column;
         align-items: center;
@@ -117,8 +117,10 @@ li{
     }
 }
 
+/* ----------------media query for computer-------------------- */
 
-@media screen and (max-width:400px){
+
+@media screen and (max-width:670px){
     .nav_container{
         flex-direction: column;
         align-items: center;
