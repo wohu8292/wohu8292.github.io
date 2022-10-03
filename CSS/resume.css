@@ -3,7 +3,8 @@
 
 body{
     font-family: 'Halant', serif;    
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(0, 85, 100);
+    color: white;
 }
 
 nav{
@@ -44,41 +45,90 @@ nav{
     cursor: pointer;
 }
 
-section{
-    margin-top: 60px;
-    margin-left: 10%;
-    max-width: 80%;
-}
-
-section p{
-    border-radius: 10px;
-    width: 50%;
-    padding: 80px;
-    background:linear-gradient(135deg,rgb(226, 255, 173),white);
-    line-height: 24px;
-    text-align: center;
-}
-
-h2{
-    margin-top: 50px;
-}
-
-hr{
-    border: 1px solid rgb(169, 37, 37);
-}
-
 li{
     padding: 10px 0px;
 }
 
-.songs a{
-    color: black;
-    text-decoration: none;
+/* ------------------- skill progress -------------------- */
+
+section{
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 80%;
 }
 
-.songs a:hover{
-    transition: .3s;
-    letter-spacing: 5px;
-    color: rgb(169, 37, 37);
-    font-weight: bold;
+.skill_progress{
+    width: 500px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.082);
+}
+
+.item p{
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.item p span:nth-child(1){
+    float: left;
+}
+
+.item p span:nth-child(1){
+    float: right;
+}
+
+.progress{
+    padding: 5px;
+    border: 1px solid #6cd4c4;
+    border-radius: 3px;
+}
+
+.skill_progress h2{
+    text-align: center;
+}
+
+.progress-level{
+    height: 10px;
+    background: linear-gradient(to right, crimson, gold);
+    border-radius: 3px;
+    animation-name: ani;
+    animation-duration: 1s;
+}
+
+@keyframes ani{
+    0%{
+        width: 0;
+    }
+}
+
+/* ----------------media query for mobile-------------------- */
+
+
+@media screen and (max-width:400px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------media query for computer-------------------- */
+
+
+@media screen and (max-width:670px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
 }

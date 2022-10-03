@@ -3,7 +3,8 @@
 
 body{
     font-family: 'Halant', serif;    
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(0, 85, 100);
+    color: white;
 }
 
 nav{
@@ -44,45 +45,98 @@ nav{
     cursor: pointer;
 }
 
-section{
-    margin-top: 60px;
-    margin-left: 10%;
-    max-width: 80%;
-}
-
-section p{
-    border-radius: 10px;
-    width: 50%;
-    padding: 80px;
-    background:linear-gradient(135deg,rgb(226, 255, 173),white);
-    line-height: 24px;
-    text-align: center;
-}
-
-h2{
-    margin-top: 50px;
-}
-
-hr{
-    border: 1px solid rgb(169, 37, 37);
-}
-
 li{
     padding: 10px 0px;
 }
 
-.songs a{
-    color: black;
-    text-decoration: none;
-}
 
-.songs a:hover{
-    transition: .3s;
-    letter-spacing: 5px;
-    color: rgb(169, 37, 37);
-    font-weight: bold;
+/* ----------------Button-------------------- */
+
+section{
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .flex_container{
-    
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.flex_container .item{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.flex_container img{
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+}
+
+.flex_container .caption{
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.flex_container .caption:hover{
+    opacity: 100;
+}
+
+.flex_container p{
+    margin-bottom: 30px;
+}
+
+.flex_container .caption a{
+    text-decoration: none;
+    background-color: rgb(134, 237, 255);
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.flex_container .caption a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+/* ----------------media query for mobile-------------------- */
+
+
+@media screen and (max-width:400px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------media query for computer-------------------- */
+
+
+@media screen and (max-width:670px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
 }

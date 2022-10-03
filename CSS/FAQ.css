@@ -3,7 +3,8 @@
 
 body{
     font-family: 'Halant', serif;    
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(0, 85, 100);
+    color: white;
 }
 
 nav{
@@ -81,4 +82,34 @@ li{
     letter-spacing: 5px;
     color: rgb(169, 37, 37);
     font-weight: bold;
+}
+
+/* ----------------media query for mobile-------------------- */
+
+
+@media screen and (max-width:400px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------media query for computer-------------------- */
+
+
+@media screen and (max-width:670px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
 }

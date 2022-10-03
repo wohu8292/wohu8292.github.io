@@ -3,7 +3,8 @@
 
 body{
     font-family: 'Halant', serif;    
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(0, 85, 100);
+    color: white;
 }
 
 /* ----------------nav-------------------- */
@@ -45,15 +46,16 @@ nav{
     cursor: pointer;
 }
 
+/* ----------------about me-------------------- */
+
 section{
     margin-top: 60px;
     margin-left: 10%;
     width: 80%;
 }
 
-/* ----------------about me-------------------- */
-
 img{
+    border-radius: 8px;
     width: 230px; 
     height: 300px; 
     margin: 10px 0px;
@@ -61,10 +63,6 @@ img{
 }
 
 section p{
-    border-radius: 10px;
-
-    padding: 30px;
-    background:linear-gradient(135deg,rgb(226, 255, 173),white);
     line-height: 35px;
     text-align: center;
 }
@@ -83,7 +81,7 @@ h2{
 }
 
 hr{
-    border: 1px solid rgb(169, 37, 37);
+    border: 1px solid rgb(206, 47, 47);
 }
 
 li{
@@ -91,14 +89,14 @@ li{
 }
 
 .songs a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .songs a:hover{
     transition: .3s;
     letter-spacing: 5px;
-    color: rgb(169, 37, 37);
+    color: rgb(255, 117, 117);
     font-weight: bold;
 }
 
