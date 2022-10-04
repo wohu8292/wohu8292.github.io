@@ -1,17 +1,13 @@
-@import
-    url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{
-    font-family: 'Halant', serif;    
+    font-family: 'Quicksand', sans-serif;       
     background-color: rgb(0, 85, 100);
     color: white;
+    margin: 0;
 }
 
 /* ----------------nav-------------------- */
-
-nav{
-    background-color: black;
-}
 
 .nav_container{
     display: flex;
@@ -22,34 +18,40 @@ nav{
 }
 
 .nav_container a{
+    background-color: rgb(211, 70, 70);
     text-decoration: none;
     color:aliceblue;
+    width: 25%;
+    border-right: 1px solid white;
+}
+
+.nav_container a:last-child{
+    border-right: none;
 }
 
 .nav_container li{
-    width: 25%;
     text-align: center;
 }
 
-.nav_container li:nth-child(1){
+.nav_container a:nth-child(1){
     background-color: white;
+    color: black;
+    font-weight: bold;
     border-bottom: 2px solid black;
 }
 
-.nav_container li:nth-child(1) a{
-    color: black;
-    font-weight: bold;
-}
-
-.nav_container li:hover{
+.nav_container a:hover{
     font-weight: bold;
     cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border-bottom: 2px solid black
 }
 
 /* ----------------about me-------------------- */
 
 section{
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 10%;
     width: 80%;
 }
@@ -122,6 +124,11 @@ li{
     .nav_container{
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav_container a{
+        border-right: none;
+        width: 100%;
     }
 
     .flex_intro{

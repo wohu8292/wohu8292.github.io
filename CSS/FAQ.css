@@ -1,87 +1,85 @@
-@import
-    url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{
-    font-family: 'Halant', serif;    
+    font-family: 'Quicksand', sans-serif;       
     background-color: rgb(0, 85, 100);
     color: white;
-}
-
-nav{
     margin: 0;
-    background-color: black;
+}
+    
+    /* ----------------nav-------------------- */
+    
+    .nav_container{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav_container a{
+        background-color: rgb(211, 70, 70);
+        text-decoration: none;
+        color:aliceblue;
+        width: 25%;
+        border-right: 1px solid white;
+    }
+    
+    .nav_container a:last-child{
+        border-right: none;
+    }
+    
+    .nav_container li{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+    .nav_container a:last-child{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    
+    .nav_container a:hover{
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #fff;
+        color: black;
+        border-bottom: 2px solid black
+    }
+
+    section{
+        margin-top: 80px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    hr{
+        border: 1px solid rgb(206, 47, 47);
+    }
+
+/* ---------------- QnA-------------------- */
+
+.faq{
+    margin-bottom: 30px;
 }
 
-.nav_container{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-.nav_container a{
-    text-decoration: none;
-    color:aliceblue;
-}
-
-.nav_container li{
-    width: 25%;
-    text-align: center;
-}
-
-.nav_container li:nth-child(4){
-    background-color: white;
-    border-bottom: 2px solid black;
-}
-
-.nav_container li:nth-child(4) a{
-    color: black;
-    font-weight: bold;
-}
-
-.nav_container li:hover{
-    font-weight: bold;
-    cursor: pointer;
-}
-
-section{
-    margin-top: 60px;
-    margin-left: 10%;
-    max-width: 80%;
-}
-
-section p{
-    border-radius: 10px;
-    width: 50%;
-    padding: 80px;
-    background:linear-gradient(135deg,rgb(226, 255, 173),white);
-    line-height: 24px;
-    text-align: center;
-}
-
-h2{
+.faq:nth-child(1){
     margin-top: 50px;
 }
 
-hr{
-    border: 1px solid rgb(169, 37, 37);
-}
-
-li{
-    padding: 10px 0px;
-}
-
-.songs a{
+article .faq p{
     color: black;
-    text-decoration: none;
+    width: 40%;
+    border: 1px solid black;
+    padding: 12px;
+    margin: 3px 0px;
+    background-color: rgb(230, 230, 230);
 }
 
-.songs a:hover{
-    transition: .3s;
-    letter-spacing: 5px;
-    color: rgb(169, 37, 37);
-    font-weight: bold;
+article .faq p:nth-child(2){
+    height: 80px;
 }
 
 /* ----------------media query for mobile-------------------- */
@@ -106,6 +104,11 @@ li{
     .nav_container{
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav_container a{
+        border-right: none;
+        width: 100%;
     }
 
     .flex_intro{
