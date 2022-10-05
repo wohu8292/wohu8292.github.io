@@ -79,6 +79,7 @@ section{
     border-radius: 50%;
     width: 16rem;
     height: 16rem;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
 
 .flex_container .caption{
