@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 body{
     font-family: 'Quicksand', sans-serif;       
@@ -6,6 +7,20 @@ body{
     color: white;
     margin: 0;
 }
+
+.icon{
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+
     
     /* ----------------nav-------------------- */
     
@@ -53,7 +68,8 @@ body{
 
 .grid_container{
     padding: 0px 10px;
-    margin: 50px 30px;
+    margin: 0px 30px;
+    margin-top: 50px;
     box-sizing: border-box;
     gap: 100px;
     display: grid;
@@ -80,8 +96,6 @@ body{
 .skill_progress{
     grid-area: skill;
 }
-/* ------------------- skill progress -------------------- */
-
 
 /* ------------------- skill progress -------------------- */
 
@@ -93,6 +107,7 @@ section{
     margin-top: 80px;
     margin-left: 10%;
     width: 80%;
+    margin-bottom: 100px;
 }
 
 .skill_progress{
@@ -141,6 +156,14 @@ section{
     }
 }
 
+/* ----------------Footer-------------------- */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 80px;
+    text-align: center;
+}
+
 /* ----------------media query for mobile-------------------- */
 
 
@@ -176,11 +199,16 @@ section{
     }
 
     .grid_container{
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: 
         "skill"
         "com"
+        "com"
+        "des"
         "des";
+        justify-items: center;
+        text-align: center;
     }
+
 }

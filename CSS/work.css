@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 body{
     font-family: 'Quicksand', sans-serif;       
@@ -6,6 +7,20 @@ body{
     color: white;
     margin: 0;
 }
+
+.icon{
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+
     
     /* ----------------nav-------------------- */
     
@@ -116,6 +131,15 @@ section{
     background-color: aliceblue;
     color: black;
 }
+
+/* ----------------Footer-------------------- */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 80px;
+    text-align: center;
+}
+
 /* ----------------media query for mobile-------------------- */
 
 

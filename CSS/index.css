@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 body{
     font-family: 'Quicksand', sans-serif;       
     background-color: rgb(0, 85, 100);
     color: white;
     margin: 0;
+}
+
+.icon{
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* ----------------nav-------------------- */
@@ -54,10 +68,11 @@ section{
     margin-top: 80px;
     margin-left: 10%;
     width: 80%;
+    margin-bottom: 100px;
 }
 
 img{
-    border-radius: 8px;
+    border-radius: 20px;
     width: 230px; 
     height: 300px; 
     margin: 10px 0px;
@@ -102,6 +117,13 @@ li{
     font-weight: bold;
 }
 
+/* ----------------Footer-------------------- */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 80px;
+    text-align: center;
+}
 /* ----------------media query for mobile-------------------- */
 
 
