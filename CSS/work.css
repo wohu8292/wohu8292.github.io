@@ -61,7 +61,7 @@ body{
         cursor: pointer;
         background-color: #fff;
         color: black;
-        border-bottom: 2px solid black
+        transition: .3s;
     }
 
 
@@ -136,9 +136,24 @@ section{
 
 footer{
     background-color: rgb(0, 0, 0);
-    padding: 80px;
+    padding: 7px;
     text-align: center;
 }
+
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+
+.foot li{
+    margin-bottom: 7px;
+    list-style: none;
+}
+
+.foot a:hover{
+    font-weight: bold;
+}
+
 
 /* ----------------media query for mobile-------------------- */
 
