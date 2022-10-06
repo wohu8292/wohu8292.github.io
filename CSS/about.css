@@ -83,7 +83,7 @@ section{
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: 
         "com com skill skill"
-        "sites des des des"
+        "sites sites des des"
 }
 
 .commu{
@@ -110,13 +110,14 @@ section{
 /* ------------------- sites -------------------- */
 
 .site_container{
+    display: flex;
     margin-top: 30%;
     text-align: center;
-    width: 300px;
+    width: 100%;
 }
 
 .site_container img{
-    margin: 9px;
+    margin: 13px;
     width:50px;
     height: 50px;
 }
@@ -222,10 +223,6 @@ footer{
     .design{
         text-align: center;
     }
-
-    .site_container{
-        margin-top: 0px;
-    }
 }
 
 /* ----------------media query for computer-------------------- */
@@ -248,7 +245,7 @@ footer{
     }
 
     .grid_container{
-        grid-template-rows: repeat(4,350px);
+        grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: 
         "skill"
