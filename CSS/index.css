@@ -123,7 +123,7 @@ hr{
 
 footer{
     background-color: rgb(0, 0, 0);
-    padding: 7px;
+    padding: 6px;
     text-align: center;
 }
 
@@ -132,14 +132,10 @@ footer{
     text-decoration: none;
 }
 
-.foot li{
-    margin-bottom: 7px;
-    list-style: none;
-}
-
 .foot a:hover{
     font-weight: bold;
 }
+
 
 /* ----------------media query for mobile-------------------- */
 
