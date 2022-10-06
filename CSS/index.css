@@ -52,6 +52,7 @@ body{
     color: black;
     font-weight: bold;
     border-bottom: 2px solid black;
+    font-weight: bold;
 }
 
 .nav_container a:hover{

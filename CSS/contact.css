@@ -81,9 +81,14 @@ body{
     padding: 30px;
 }
 
+#email{
+    margin-bottom: 30px;
+}
+
 #message{
     width: 500px;
     height: 200px;
+    margin-bottom: 30px;
 }
 
 /* ----------------media query for mobile-------------------- */
@@ -126,5 +131,9 @@ footer{
     .flex_intro{
         flex-direction: column;
         align-items: center;
+    }
+
+    .email_form{
+        width: 100px;
     }
 }
