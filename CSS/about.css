@@ -223,6 +223,10 @@ footer{
     .design{
         text-align: center;
     }
+
+    .skill_progress{
+        width: 80%;
+    }    
 }
 
 /* ----------------media query for computer-------------------- */
