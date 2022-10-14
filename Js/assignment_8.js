@@ -2,7 +2,7 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
-let storyText="It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+let storyText="It was 94 fahrenheit inside, so :insertx: messed around at the home. The house he get last year was placed in :inserty:. he like stared :insertz: in excitement at the new home. Bob also love whole thing. it was a cool.";
 let insertX=["Willy the Goblin", "Big Daddy", "Father Christmas"];
 let insertY=["the soup kitchen", "Disneyland", "the White House"];
 let insertZ=["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
