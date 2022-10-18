@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <input class="numberInput" type="text">
+  <p></p>
+
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+
+    //function for square
+    function squared(num) {
+      return num * num;
+    }
+
+    //function for cube
+    function cubed(num) {
+      return num * num * num;
+    }
+
+    //function for factorial
+    function factorial(num) {
+      let x = num;
+      while (x > 1) {
+        num *= x-1;
+        x--;
+      }
+
+      return num;
+    }
+
+    // if input value is changed, then execute function
+    input.addEventListener('change', () => {
+      //allocate input value into num variable
+      const num = parseFloat(input.value);
+
+      //if num is not number, then show following text.
+      if (isNaN(num)) {
+        para.textContent = 'You need to enter a number!';
+      } 
+      //if num is number execute above functions and then
+      //get returned values.
+      else {
+        para.textContent = `${num} squared is ${squared(num)}. `;
+        para.textContent += `${num} cubed is ${cubed(num)}. `;
+        para.textContent += `${num} factorial is ${factorial(num)}. `;
+      }
+    });
+
+  </script>
+</body>
+</html>
