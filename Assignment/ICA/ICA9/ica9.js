@@ -1,7 +1,10 @@
 const btn = document.querySelector('button');
-btn.addEventListener('click', () => displayMessage('Your inbox is almost full — delete some mails', 'warning'));
+btn.addEventListener('click', () => 
+displayMessage('Your inbox is almost full — delete some mails', 'warning'));
 
 function displayMessage(msgText, msgType) {
+
+  // create structure
     const body = document.body;
 
     const panel = document.createElement('div');
@@ -12,6 +15,8 @@ function displayMessage(msgText, msgType) {
     msg.textContent = msgText;
     panel.appendChild(msg);
     
+
+    // close_button
     const closeBtn = document.createElement('button');
     closeBtn.textContent = 'x';
     panel.appendChild(closeBtn);
@@ -20,6 +25,7 @@ function displayMessage(msgText, msgType) {
     panel.parentNode.removeChild(panel));
 
 
+    // content
     if (msgType === 'warning') {
         msg.style.backgroundImage = 'url(icons/warning.png)';
         panel.style.backgroundColor = 'red';
