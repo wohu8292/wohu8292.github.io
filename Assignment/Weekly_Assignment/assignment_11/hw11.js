@@ -7,7 +7,7 @@ const Wrapper=document.querySelector(".wrapper");
 Generate.addEventListener('click', getQuote);
 const api_url='https://thesimpsonsquoteapi.glitch.me/quotes?count=num';
 const img = document.createElement("img");
-img.style.height='300px';
+img.style.height='250px';
 
 async function getQuote(){
     console.log("hello");
