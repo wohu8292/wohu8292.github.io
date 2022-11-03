@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(0, 85, 100);
+}
+
+.container{
+    height: 59%;
+    padding: 30px;
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.quote{
+    color:aliceblue;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.generate{
+    width: 100%;
+    position: absolute;
+    top: 103%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: aliceblue;
+    border: none;
+    padding: 15px 45px;
+    font-size: 18px;
+    color: rgb(0, 85, 100);
+    font-weight: 600;
+}
