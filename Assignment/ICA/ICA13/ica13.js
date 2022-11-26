@@ -6,7 +6,7 @@ const aliceTumbling = [
   const aliceTiming = {
     duration: 2000,
     iterations: 1,
-    fill: 'forwards'
+    fill: 'forwards' 
   }
   
   const alice1 = document.querySelector("#alice1");
