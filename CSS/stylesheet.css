@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;       
+    background-color: rgb(0, 85, 100);
+    color: white;
+    margin: 0;
+}
+
+.icon{
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ----------------nav-------------------- */
+
+.nav_container{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_container a{
+    background-color: rgb(211, 70, 70);
+    text-decoration: none;
+    color:aliceblue;
+    width: 25%;
+    border-right: 1px solid white;
+}
+
+.nav_container a:last-child{
+    border-right: none;
+}
+
+.nav_container li{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* .nav_container a:nth-child(1){
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+} */
+
+.nav_container a:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    transition: .3s;
+}
+
+/* ----------------about me-------------------- */
+
+section{
+    margin-top: 80px;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+img{
+    border-radius: 20px;
+    width: 230px; 
+    height: 300px; 
+}
+
+section p{
+    line-height: 35px;
+    text-align: center;
+}
+
+.flex_intro{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+/* ----------------favorite song-------------------- */
+
+h2{
+    margin-top: 50px;
+}
+
+hr{
+    border: 1px solid rgb(206, 47, 47);
+}
+
+.songs li{
+    padding: 10px 0px;
+}
+
+.songs a{
+    color: white;
+    text-decoration: none;
+}
+
+.songs a:hover{
+    transition: .3s;
+    letter-spacing: 5px;
+    color: rgb(255, 117, 117);
+    font-weight: bold;
+}
+
+/* ----------------Work-------------------- */
+
+.flex_container{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.flex_container .item{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.flex_container img{
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+.flex_container .caption{
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.flex_container .caption:hover{
+    opacity: 100;
+}
+
+.flex_container p{
+    margin-bottom: 30px;
+}
+
+.flex_container .caption a{
+    text-decoration: none;
+    background-color: rgb(134, 237, 255);
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.flex_container .caption a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+/* ------------------- grid_container -------------------- */
+
+.grid_container{
+    margin: 0% 5%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    gap: 100px;
+    display: grid;
+    width:90%;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "com skill"
+        "empty sites";
+}
+
+.commu{
+    width: 90%;
+    line-height: 3em;
+    grid-area: com;
+    margin: 0;
+}
+
+.design{
+    text-align: right;
+    line-height: 3em;
+    margin: 0;
+    grid-area: des;
+}
+
+.skill_progress{
+    grid-area: skill;
+}
+/* ------------------- sites -------------------- */
+
+.site_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.site_container a{
+    margin: 10px;
+}
+
+.site_container img{
+    width:50px;
+    height: 50px;
+}
+
+/* ------------------- prototype -------------------- */
+
+video{
+    width: 500px;
+    height: 300px;
+}
+
+.prototype{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.figma_pic{
+    width:70%;
+    height: 70%;
+    border-radius: 0;
+    margin-top: 100px;
+}
+
+.desc p{
+    margin-top: 15px;
+    display: block;
+}
+
+.desc p a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+
+.desc a:hover{
+    color: rgb(255, 166, 0);
+    text-decoration:underline
+}
+
+
+/* ------------------- skill progress -------------------- */
+
+hr{
+    border: 1px solid rgb(206, 47, 47);
+}
+
+.skill_progress{
+    width: 65%;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.082);
+}
+
+.item p{
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.item p span:nth-child(1){
+    float: left;
+}
+
+.item p span:nth-child(2){
+    float: right;
+}
+
+.progress{
+    padding: 5px;
+    border: 1px solid #6cd4c4;
+    border-radius: 3px;
+}
+
+.skill_progress h2{
+    text-align: center;
+}
+
+.progress-level{
+    height: 10px;
+    background: linear-gradient(to right, crimson, gold);
+    border-radius: 3px;
+    animation-name: ani;
+    animation-duration: 1s;
+}
+
+@keyframes ani{
+    0%{
+        width: 0;
+    }
+}
+
+/* ---------------- email-------------------- */
+
+.form_control{
+    width: 80%;
+}
+
+.email_form{
+
+    padding: 30px;
+}
+
+#email{
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+.mes{
+    border: 1px solid gray;
+}
+
+#message{
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.btn_cover{
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    padding: 3px 40px
+}
+
+/* ----------------Info-------------------- */
+
+.info{
+    width: 20%;
+}
+
+/* ----------------Footer-------------------- */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 6px;
+    text-align: center;
+}
+
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+
+.foot a:hover{
+    font-weight: bold;
+}
+
+
+/* ----------------media query for mobile-------------------- */
+
+
+@media screen and (max-width:400px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_container a{
+        border-right: none;
+        width: 100%;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid_container{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "skill"
+        "com";
+        justify-items: center;
+        text-align: center;
+    }
+
+    .design{
+        text-align: center;
+    }
+
+    .skill_progress{
+        width: 80%;
+    }
+    
+    .dice-wrapper img{
+        width: 180px;
+        height: 230px;
+    }
+}
+
+
+/* ----------------media query for computer-------------------- */
+
+
+@media screen and (max-width:670px){
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_container a{
+        border-right: none;
+        width: 100%;
+    }
+
+    .flex_intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid_container{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "skill"
+        "com";
+        justify-items: center;
+        text-align: center;
+    }
+
+    .design{
+        text-align: center;
+    }
+
+    .site_container{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .flex_container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .info{
+        width: 80%;
+    }
+}
+
+
+/* ----------------js_project-------------------- */
+
+h1{
+    color: goldenrod;
+}
+
+p{
+    color:aliceblue;
+}
+
+.dice_container{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.js_btn{
+    padding: 10px;
+    color: #016f32;
+    background-color: goldenrod;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.shake{
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}

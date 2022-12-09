@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <title>BlackDice</title>
+  </head>
+  <body>
+    <div class="icon"><a href="index.html">Woong'</a></div>
+
+    <nav>
+      <ul class="nav_container">
+        <a href="index.html"><li>Home</li></a>
+        <a href="web.html"><li>Web</li></a>
+        <a href="prototype.html"><li>Prototype</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+        <a href="jsproject.html"><li>JS project</li></a>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>BlackDice</h1>
+      <hr />
+      <div class="dice_container">
+        <p id="mes">Press "Start" Button to play the game</p>
+
+        <div class="dice-wrapper">
+          <img src="/img/dice-01.svg" alt="" id="die_1" />
+          <img src="/img/dice-02.svg" alt="" id="die_2" />
+        </div>
+
+      <p id="spot">Spot:</p>
+      <p id="sum">Sum:</p>
+      <button class="js_btn" onclick="roll()">Start</button>
+      <button class="js_btn" onclick="newDice()">Roll</button>
+      <button class="js_btn" onclick="reset()">Reset</button>
+      <p id="player_el"></p>
+    </div>
+    </section>
+    <footer>
+      <div class="foot">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="work.html">Work</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="Js/jsproject.js"></script>
+  </body>
+</html>
