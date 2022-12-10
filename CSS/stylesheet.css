@@ -230,7 +230,7 @@ hr{
 /* ------------------- prototype -------------------- */
 
 video{
-    width: 500px;
+    width: 70%;
     height: 300px;
 }
 
@@ -252,6 +252,7 @@ video{
 .desc p{
     margin-top: 15px;
     display: block;
+    font-size: 15px;
 }
 
 .desc p a{
