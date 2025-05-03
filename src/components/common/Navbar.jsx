@@ -4,7 +4,7 @@ import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 
 const navLinks = [
-  { name: "Home", path: "/capstone" },
+  { name: "Home", path: "/" },
   {
     name: "Design",
     path: "/design",
